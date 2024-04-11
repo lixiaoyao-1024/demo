@@ -4,30 +4,8 @@
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
-  <div id="clock">
-    {{ time }}
-  </div>
+  <h1>原神启动</h1>
 
-  <script>
-    new Vue({
-      el: '#clock',
-      data: {
-        time: ''
-      },
-      mounted() {
-        this.getTime();
-        setInterval(this.getTime, 1000);
-      },
-      methods: {
-        getTime() {
-          const now = new Date();
-          const hours = now.getHours();
-          const minutes = now.getMinutes();
-          const seconds = now.getSeconds();
-          this.time = `{hours}:{minutes}:${seconds}`;
-        }
-      }
-    })
-  </script>
+
 </body>
 </html>
